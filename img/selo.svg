@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <clipPath id="miolo"><circle cx="100" cy="100" r="54"/></clipPath>
+    <path id="arcoCima" d="M 28 100 A 72 72 0 0 1 172 100"/>
+    <path id="arcoBaixo" d="M 20 100 A 80 80 0 0 0 180 100"/>
+  </defs>
+  <circle cx="100" cy="100" r="97" fill="#FBF3E4" stroke="#111111" stroke-width="4"/>
+  <circle cx="100" cy="100" r="88" fill="none" stroke="#B34A2E" stroke-width="3"/>
+  <circle cx="100" cy="100" r="58" fill="#FBF3E4" stroke="#111111" stroke-width="3"/>
+  <g clip-path="url(#miolo)">
+    <rect x="40" y="40" width="120" height="120" fill="#F4C98F"/>
+    <path d="M40 142 C70 126 110 128 160 138 L160 160 L40 160 Z" fill="#D9A15F"/>
+    <path d="M40 150 C80 140 120 142 160 150" fill="none" stroke="#111111" stroke-width="1.6" opacity=".5"/>
+    <g transform="translate(100 98) scale(.62) translate(-100 -98)">
+      <!-- aba do chapéu -->
+      <path d="M26 96 C30 122 66 130 100 130 C134 130 170 122 174 96 C168 108 136 114 100 114 C64 114 32 108 26 96 Z" fill="#5C3418" stroke="#111111" stroke-width="5" stroke-linejoin="round"/>
+      <!-- copa -->
+      <path d="M58 106 C54 76 70 48 100 48 C130 48 146 76 142 106 C128 114 72 114 58 106 Z" fill="#7A4A2B" stroke="#111111" stroke-width="5" stroke-linejoin="round"/>
+      <!-- faixa azul -->
+      <path d="M58 100 C74 110 126 110 142 100 L141 110 C126 120 74 120 59 110 Z" fill="#4F77E6" stroke="#111111" stroke-width="4" stroke-linejoin="round"/>
+      <!-- tachinhas -->
+      <circle cx="78" cy="112" r="4" fill="#F4C98F" stroke="#111111" stroke-width="2"/>
+      <circle cx="100" cy="116" r="4" fill="#F4C98F" stroke="#111111" stroke-width="2"/>
+      <circle cx="122" cy="112" r="4" fill="#F4C98F" stroke="#111111" stroke-width="2"/>
+      <!-- costura e brilho -->
+      <path d="M76 84 C88 70 112 70 124 84" fill="none" stroke="#B34A2E" stroke-width="3" stroke-dasharray="5 5" stroke-linecap="round"/>
+      <path d="M82 62 C92 56 104 56 112 60" fill="none" stroke="#C98A5A" stroke-width="4" stroke-linecap="round"/>
+      <!-- barbicacho -->
+      <path d="M32 100 C28 126 34 142 44 148 M168 100 C172 126 166 142 156 148" fill="none" stroke="#111111" stroke-width="4" stroke-linecap="round"/>
+    </g>
+  </g>
+  <text font-family="Georgia, 'Times New Roman', serif" font-weight="bold" font-size="16" fill="#111111" letter-spacing="1.2"><textPath href="#arcoCima" startOffset="50%" text-anchor="middle">RAÍZES DO NORDESTE</textPath></text>
+  <text font-family="Georgia, 'Times New Roman', serif" font-size="11" fill="#111111" letter-spacing="2"><textPath href="#arcoBaixo" startOffset="50%" text-anchor="middle">★ SABORES DA TERRA ★</textPath></text>
+</svg>

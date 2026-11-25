@@ -1,0 +1,104 @@
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { font-family: Arial, sans-serif; margin: 0; color: #111111; }
+
+/* Cabeçalho: título sobre azul royal e selo redondo da Raízes do Nordeste */
+.topo { position: relative; padding: 16px; font-size: 24px; color: #111111; background-color: #4F77E6; border-bottom: 2px solid #111111; }
+.topo::after { content: ""; display: block; height: 130px; margin: 16px -16px -16px; background: #F4C98F url("../img/selo.svg") center / auto 92% no-repeat; }
+
+.conteudo { max-width: 960px; margin: 0 auto; padding: 16px; }
+.conteudo-estreito { max-width: 480px; }
+.conteudo-medio { max-width: 640px; }
+input { width: 100%; padding: 10px; margin: 8px 0; border: 1px solid #888; border-radius: 6px; }
+.botao { display: inline-block; padding: 10px 14px; border: 1px solid #111111; border-radius: 20px; background: #fff; color: #111111; cursor: pointer; text-decoration: none; font-size: 14px; }
+.botao:disabled { opacity: 0.4; cursor: not-allowed; }
+.botao-principal { margin-top: 8px; font-weight: bold; }
+.botao-largo { width: 100%; }
+.botao-pequeno { padding: 4px 10px; }
+.aviso { font-size: 13px; color: #555; }
+.aviso a, .aviso a:visited { color: #111111; font-weight: bold; }
+.lista-unidades { display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 16px; }
+.cartao { border: 1px solid #aaa; border-radius: 8px; padding: 12px; }
+.etiqueta { display: inline-block; border: 1px solid #888; border-radius: 12px; padding: 2px 8px; font-size: 12px; }
+.rodape { padding: 16px; text-align: center; border-top: 1px solid #ccc; margin-top: 24px; }
+.rodape a { margin: 0 8px; color: #111111; }
+.rodape-cardapio { padding-bottom: 90px; }
+
+.formulario label { display: block; margin-top: 10px; font-size: 14px; }
+.checagem { display: flex; gap: 8px; align-items: flex-start; margin-top: 14px; }
+.checagem input { width: auto; margin: 3px 0 0; }
+.erro { color: #b00020; font-size: 14px; min-height: 18px; margin: 8px 0 0; }
+.dica { font-size: 13px; color: #555; border: 1px dashed #aaa; border-radius: 6px; padding: 8px; }
+
+.caixa-unidade { display: flex; justify-content: space-between; border: 1px solid #888; border-radius: 20px; padding: 8px 14px; margin-bottom: 12px; }
+.caixa-unidade a { color: #111111; }
+.links-cliente { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; font-size: 14px; margin-bottom: 8px; }
+.links-cliente a { color: #111111; }
+.links-cliente .botao { margin-left: auto; }
+.abas { display: flex; gap: 8px; margin-bottom: 12px; }
+.aba { border: none; background: none; padding: 6px 4px; cursor: pointer; font-size: 15px; }
+.aba.ativa { border-bottom: 2px solid #111111; font-weight: bold; }
+.lista-produtos { display: grid; grid-template-columns: 1fr; gap: 10px; }
+.produto { display: flex; justify-content: space-between; align-items: center; border: 1px solid #aaa; border-radius: 8px; padding: 12px; }
+.produto h2 { margin: 0 0 4px; font-size: 16px; }
+.produto p { margin: 0; }
+.barra-carrinho { position: fixed; bottom: 0; left: 0; right: 0; padding: 10px 16px; background: #fff; border-top: 1px solid #ccc; }
+.barra-carrinho .botao { width: 100%; display: flex; justify-content: space-between; }
+
+.item-carrinho { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; border: 1px solid #aaa; border-radius: 8px; padding: 12px; margin-bottom: 10px; }
+.item-carrinho h2 { margin: 0 0 4px; font-size: 16px; }
+.item-carrinho p { margin: 0; }
+.controles { display: flex; align-items: center; gap: 8px; }
+.total-linha { display: flex; justify-content: space-between; font-size: 18px; border-top: 1px solid #ccc; padding-top: 10px; }
+.opcao { display: flex; align-items: center; gap: 8px; margin: 8px 0; }
+.opcao input, .caixa-teste input { width: auto; margin: 0; }
+.caixa-teste { border: 1px dashed #888; border-radius: 6px; padding: 8px; margin: 12px 0; font-size: 14px; }
+.estado { font-style: italic; }
+.caixa-falha { border: 2px dashed #b00020; border-radius: 8px; padding: 12px; margin-top: 16px; }
+.caixa-sucesso { border: 2px solid #2e7d32; border-radius: 8px; padding: 12px; margin-top: 16px; }
+
+.pedido-numero { font-size: 20px; font-weight: bold; margin-bottom: 4px; }
+.linha-tempo { list-style: none; padding: 0; margin: 16px 0; }
+.linha-tempo li { position: relative; padding: 10px 0 10px 32px; color: #777; }
+.linha-tempo li::before { content: ""; position: absolute; left: 0; top: 12px; width: 16px; height: 16px; border: 2px solid #888; border-radius: 50%; background: #fff; }
+.linha-tempo li.concluida { color: #111111; }
+.linha-tempo li.concluida::before { background: #111111; border-color: #111111; }
+.linha-tempo li.atual { color: #111111; font-weight: bold; }
+.linha-tempo li.atual::before { background: #111111; border-color: #111111; box-shadow: 0 0 0 4px #ddd; }
+
+.saldo { font-size: 32px; font-weight: bold; margin: 8px 0 4px; }
+progress { width: 100%; height: 16px; }
+.caixa-consentimento { border: 2px solid #111111; border-radius: 8px; padding: 12px; margin-top: 16px; }
+
+/* Totem: tela grande, toque, elementos ampliados (RNF09) */
+.totem { font-size: 20px; }
+.totem h1 { font-size: 36px; }
+.totem h2 { font-size: 26px; }
+.totem .aviso { font-size: 16px; }
+.totem .total-linha { font-size: 28px; }
+.totem .opcao { font-size: 24px; gap: 14px; }
+.totem .opcao input, .totem .caixa-teste input { width: 28px; height: 28px; }
+.totem .item-carrinho h2 { font-size: 22px; }
+.totem .controles { font-size: 26px; }
+.unidade-totem { font-size: 24px; margin: 0 0 8px; }
+.botao-totem { padding: 16px 28px; font-size: 22px; min-height: 64px; border-width: 2px; border-radius: 32px; }
+.convite-totem { border: 2px dashed #888; border-radius: 12px; padding: 16px; margin-bottom: 20px; }
+.layout-totem { display: grid; grid-template-columns: 1fr; gap: 24px; }
+.grade-totem { display: grid; grid-template-columns: 1fr; gap: 16px; }
+.produto-totem { display: flex; flex-direction: column; gap: 12px; border: 2px solid #aaa; border-radius: 12px; padding: 16px; }
+.produto-totem h2 { margin: 0; }
+.produto-totem p { margin: 0; font-size: 24px; }
+.resumo-totem { border: 2px solid #111111; border-radius: 12px; padding: 16px; align-self: start; }
+.acoes-totem { display: flex; gap: 12px; margin-top: 16px; }
+.acoes-totem .botao { flex: 1; text-align: center; }
+.senha-totem { font-size: 72px; font-weight: bold; text-align: center; border: 4px solid #111111; border-radius: 16px; padding: 16px; margin: 16px 0; }
+
+@media (min-width: 768px) {
+  .topo { --altura: clamp(110px, 11vw, 150px); height: var(--altura); line-height: var(--altura); padding: 0 32px; font-size: clamp(22px, 3vw, 32px); background: linear-gradient(to right, #4F77E6 0 45%, #F4C98F 45% 100%); }
+  .topo::after { position: absolute; top: 0; bottom: 0; left: 45%; right: 0; height: auto; margin: 0; background: url("../img/selo.svg") center / auto 88% no-repeat; }
+  .totem .topo { --altura: clamp(130px, 14vw, 200px); font-size: clamp(24px, 3.4vw, 48px); }
+  .lista-unidades { grid-template-columns: repeat(3, 1fr); }
+  .lista-produtos { grid-template-columns: repeat(2, 1fr); }
+  .layout-totem { grid-template-columns: 2fr 1fr; }
+  .grade-totem { grid-template-columns: repeat(2, 1fr); }
+}
