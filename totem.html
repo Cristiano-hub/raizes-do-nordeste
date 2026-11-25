@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raízes do Nordeste</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body class="totem">
+  <header class="topo"><strong>Raízes</strong> <span>do Nordeste</span></header>
+
+  <main class="conteudo">
+    <p class="unidade-totem"><strong id="nome-unidade"></strong></p>
+    <h1>Faça seu pedido</h1>
+
+    <div class="convite-totem">
+      <p id="texto-modo"></p>
+      <button type="button" id="btn-entrar" class="botao botao-totem">Entrar para acumular pontos</button>
+      <div id="painel-entrar" hidden>
+        <p class="aviso">Simulação: no Totem real você aproximaria o celular. Aqui, entre como cliente de teste.</p>
+        <button type="button" id="btn-entrar-teste" class="botao botao-totem botao-principal">Entrar como cliente de teste</button>
+      </div>
+    </div>
+
+    <div class="layout-totem">
+      <section id="grade-produtos" class="grade-totem"></section>
+      <aside class="resumo-totem">
+        <h2>Seu pedido</h2>
+        <div id="itens-pedido"></div>
+        <p class="total-linha"><span>Total</span> <strong id="total-pedido">R$ 0,00</strong></p>
+        <div class="acoes-totem">
+          <button type="button" id="btn-cancelar" class="botao botao-totem">Cancelar</button>
+          <button type="button" id="btn-pagar" class="botao botao-totem botao-principal" disabled>Pagar</button>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <a href="ajuda.html">Ajuda</a>
+    <a href="politica.html">Política de privacidade</a>
+  </footer>
+
+  <script src="js/dados.js"></script>
+  <script src="js/totem-comum.js"></script>
+  <script src="js/totem.js"></script>
+</body>
+</html>

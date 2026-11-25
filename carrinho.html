@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raízes do Nordeste - Seu pedido</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header class="topo">
+    <strong>Raízes</strong> <span>do Nordeste</span>
+  </header>
+
+  <main class="conteudo conteudo-medio">
+    <p><a href="cardapio.html">&larr; Voltar ao cardápio</a></p>
+    <h1>Seu pedido</h1>
+    <p id="unidade-pedido" class="aviso"></p>
+
+    <section id="itens-carrinho"></section>
+
+    <p class="total-linha"><span>Total</span> <strong id="total-pedido">R$ 0,00</strong></p>
+
+    <section id="area-pagamento">
+      <h2>Retirada na loja</h2>
+      <p class="aviso">Você retira o pedido na unidade escolhida.</p>
+
+      <h2>Forma de pagamento</h2>
+      <label class="opcao">
+        <input type="radio" name="forma" value="Pix" checked> Pix (simulado)
+      </label>
+      <label class="opcao">
+        <input type="radio" name="forma" value="Cartão"> Cartão (simulado)
+      </label>
+      <p class="aviso">Nenhum dado de cartão é digitado ou guardado. O pagamento é simulado por um serviço externo fictício.</p>
+
+      <div class="caixa-teste">
+        <label>
+          <input type="checkbox" id="simular-falha"> Simular falha no pagamento (apenas para teste do protótipo)
+        </label>
+      </div>
+
+      <button type="button" id="btn-finalizar" class="botao botao-principal botao-largo">Finalizar pedido</button>
+    </section>
+
+    <p id="msg-processando" class="estado" role="status" hidden>Processando pagamento...</p>
+
+    <div id="caixa-falha" class="caixa-falha" role="alert" hidden>
+      <p><strong>Não foi possível processar o pagamento. Tente novamente.</strong></p>
+      <p>Status do pedido: Pagamento pendente. Seu pedido não foi cancelado.</p>
+      <button type="button" id="btn-tentar" class="botao">Tentar novamente</button>
+      <button type="button" id="btn-outra-forma" class="botao">Escolher outra forma</button>
+    </div>
+
+    <div id="caixa-sucesso" class="caixa-sucesso" role="status" hidden>
+      <p><strong id="titulo-sucesso">Pagamento aprovado!</strong></p>
+      <p id="texto-sucesso"></p>
+      <p class="aviso">Você será levado ao acompanhamento do pedido.</p>
+      <a href="acompanhamento.html" class="botao">Ver acompanhamento</a>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <a href="ajuda.html">Ajuda</a>
+    <a href="politica.html">Política de privacidade</a>
+  </footer>
+
+  <script src="js/dados.js"></script>
+  <script src="js/carrinho.js"></script>
+</body>
+</html>

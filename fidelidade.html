@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raízes do Nordeste - Fidelidade</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header class="topo">
+    <strong>Raízes</strong> <span>do Nordeste</span>
+  </header>
+
+  <main class="conteudo conteudo-medio">
+    <p><a href="cardapio.html">&larr; Voltar ao cardápio</a></p>
+    <h1>Fidelidade</h1>
+
+    <section id="area-participando">
+      <p><span class="etiqueta">Participando da fidelidade</span></p>
+      <p class="saldo"><span id="saldo">0</span> pts</p>
+      <progress id="barra" value="0" max="150"></progress>
+      <p id="texto-progresso" class="aviso"></p>
+      <p class="aviso">R$ 1 = 1 ponto em cada pedido pago.</p>
+      <p>
+        <a href="#consentimento" id="link-gerenciar">Gerenciar consentimento</a>
+        <span class="aviso">· Você pode sair quando quiser.</span>
+      </p>
+
+      <h2>Recompensas</h2>
+      <div id="lista-recompensas"></div>
+      <div id="msg-resgate" class="caixa-sucesso" role="status" hidden></div>
+    </section>
+
+    <section id="area-fora" hidden>
+      <p>Você não participa da fidelidade. Seus pedidos continuam normais, mas não acumulam pontos.</p>
+      <button type="button" id="btn-participar" class="botao botao-principal">Participar da fidelidade</button>
+    </section>
+
+    <section id="consentimento" class="caixa-consentimento" hidden>
+      <h2>Gerenciar consentimento</h2>
+      <p>Você aceitou usar seus dados de pedidos para acumular pontos e trocar recompensas.
+        Se sair, novos pedidos deixam de acumular pontos. Você pode continuar fazendo pedidos normalmente.</p>
+      <button type="button" id="btn-sair-fidelidade" class="botao">Sair da fidelidade</button>
+      <button type="button" id="btn-cancelar-consentimento" class="botao">Cancelar</button>
+    </section>
+
+    <div id="msg-consentimento" class="caixa-sucesso" role="status" hidden></div>
+  </main>
+
+  <footer class="rodape">
+    <a href="ajuda.html">Ajuda</a>
+    <a href="politica.html">Política de privacidade</a>
+  </footer>
+
+  <script src="js/dados.js"></script>
+  <script src="js/fidelidade.js"></script>
+</body>
+</html>

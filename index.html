@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raízes do Nordeste - Escolha sua unidade</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header class="topo">
+    <strong>Raízes</strong> <span>do Nordeste</span>
+  </header>
+
+  <main class="conteudo">
+    <h1>Escolha sua unidade</h1>
+    <p>O cardápio muda de acordo com a loja.</p>
+
+    <input type="text" id="busca" placeholder="Buscar por cidade ou CEP">
+    <button type="button" id="btn-localizacao" class="botao">Usar minha localização (opcional)</button>
+    <p class="aviso">Localização só é usada para sugerir a unidade mais próxima, com o seu consentimento.</p>
+
+    <section id="lista-unidades" class="lista-unidades"></section>
+
+    <p class="aviso"><a href="totem.html">Abrir o modo Totem (demonstração)</a></p>
+  </main>
+
+  <footer class="rodape">
+    <a href="ajuda.html">Ajuda</a>
+    <a href="politica.html">Política de privacidade</a>
+  </footer>
+
+  <script src="js/dados.js"></script>
+  <script src="js/unidades.js"></script>
+</body>
+</html>

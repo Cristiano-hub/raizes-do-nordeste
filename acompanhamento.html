@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raízes do Nordeste - Acompanhar pedido</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header class="topo">
+    <strong>Raízes</strong> <span>do Nordeste</span>
+  </header>
+
+  <main class="conteudo conteudo-medio">
+    <h1>Acompanhar pedido</h1>
+    <p class="pedido-numero">Pedido #<span id="numero-pedido"></span></p>
+    <p id="unidade-pedido" class="aviso"></p>
+
+    <p id="previsao" role="status"></p>
+
+    <ol id="linha-tempo" class="linha-tempo"></ol>
+
+    <p class="aviso">A evolução do status é simulada: a cada poucos segundos o pedido avança uma etapa.</p>
+
+    <a href="cardapio.html" class="botao">Fazer novo pedido</a>
+  </main>
+
+  <footer class="rodape">
+    <a href="ajuda.html">Ajuda</a>
+    <a href="politica.html">Política de privacidade</a>
+  </footer>
+
+  <script src="js/acompanhamento.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raízes do Nordeste</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header class="topo"><strong>Raízes</strong> <span>do Nordeste</span></header>
+
+  <main class="conteudo">
+    <div class="caixa-unidade">
+      <span id="nome-unidade"></span>
+      <a href="index.html">Trocar</a>
+    </div>
+
+    <div class="links-cliente">
+      <a href="fidelidade.html" id="link-fidelidade"></a>
+      <a href="minha-conta.html" id="link-conta">Minha conta</a>
+      <a href="#" id="link-sair">Sair</a>
+      <button type="button" class="botao" id="btn-carrinho-topo">Carrinho (0)</button>
+    </div>
+
+    <h1>Cardápio</h1>
+
+    <nav class="abas" id="abas">
+      <button type="button" class="aba ativa" data-categoria="Todos">Todos</button>
+      <button type="button" class="aba" data-categoria="Salgados">Salgados</button>
+      <button type="button" class="aba" data-categoria="Bebidas">Bebidas</button>
+    </nav>
+
+    <section id="lista-produtos" class="lista-produtos"></section>
+  </main>
+
+  <footer class="rodape rodape-cardapio">
+    <a href="ajuda.html">Ajuda</a>
+    <a href="politica.html">Política de privacidade</a>
+  </footer>
+
+  <div class="barra-carrinho">
+    <button type="button" class="botao botao-principal" id="btn-ver-carrinho">
+      <span id="texto-carrinho">Ver carrinho (0)</span>
+      <span id="total-carrinho">R$ 0,00</span>
+    </button>
+  </div>
+
+  <script src="js/dados.js"></script>
+  <script src="js/cardapio.js"></script>
+</body>
+</html>

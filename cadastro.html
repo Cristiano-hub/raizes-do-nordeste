@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raízes do Nordeste - Criar conta</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header class="topo">
+    <strong>Raízes</strong> <span>do Nordeste</span>
+  </header>
+
+  <main class="conteudo conteudo-estreito">
+    <h1>Criar conta</h1>
+
+    <p class="dica">Protótipo: a conta não é gravada. Para entrar depois, use o cliente de teste
+      (cliente@teste.com / senha 123456).</p>
+
+    <form id="form-cadastro" class="formulario">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" required>
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" required>
+
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" minlength="6" required>
+
+      <label for="celular">Celular (opcional)</label>
+      <input type="tel" id="celular">
+
+      <label class="checagem">
+        <input type="checkbox" id="aceite-politica">
+        <span>Li e estou ciente da <a href="politica.html">Política de Privacidade</a>.</span>
+      </label>
+
+      <label class="checagem">
+        <input type="checkbox" id="aceite-fidelidade">
+        <span>(Opcional) Quero participar do programa de fidelidade e receber promoções.</span>
+      </label>
+
+      <p class="aviso">Você pode revogar este consentimento a qualquer momento em
+        Minha conta &gt; Privacidade.</p>
+
+      <button type="submit" id="btn-criar" class="botao botao-principal botao-largo" disabled>Criar conta</button>
+    </form>
+
+    <p>Já tem conta? <a href="login.html">Entrar</a></p>
+  </main>
+
+  <footer class="rodape">
+    <a href="ajuda.html">Ajuda</a>
+    <a href="politica.html">Política de privacidade</a>
+  </footer>
+
+  <script src="js/cadastro.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raízes do Nordeste</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body class="totem">
+  <header class="topo"><strong>Raízes</strong> <span>do Nordeste</span></header>
+
+  <main class="conteudo conteudo-medio">
+    <p class="unidade-totem"><strong id="nome-unidade"></strong></p>
+
+    <section id="area-pagamento">
+      <h1>Pagamento</h1>
+      <div id="itens-pedido"></div>
+      <p class="total-linha"><span>Total</span> <strong id="total-pedido">R$ 0,00</strong></p>
+
+      <h2>Forma de pagamento</h2>
+      <label class="opcao"><input type="radio" name="forma" value="Pix" checked> Pix (simulado)</label>
+      <label class="opcao"><input type="radio" name="forma" value="Cartão"> Cartão (simulado)</label>
+      <p class="aviso">Nenhum dado de cartão é digitado ou guardado. O pagamento é simulado.</p>
+
+      <div class="caixa-teste">
+        <label><input type="checkbox" id="simular-falha"> Simular falha no pagamento (apenas para teste do protótipo)</label>
+      </div>
+
+      <div class="acoes-totem">
+        <a href="totem.html" class="botao botao-totem" id="btn-voltar">Voltar</a>
+        <button type="button" id="btn-finalizar" class="botao botao-totem botao-principal">Finalizar pedido</button>
+      </div>
+    </section>
+
+    <p id="msg-processando" class="estado" role="status" hidden>Processando pagamento...</p>
+
+    <div id="caixa-falha" class="caixa-falha" role="alert" hidden>
+      <p><strong>Não foi possível processar o pagamento. Tente novamente.</strong></p>
+      <p>Status do pedido: Pagamento pendente. Seu pedido não foi cancelado.</p>
+      <div class="acoes-totem">
+        <button type="button" id="btn-tentar" class="botao botao-totem">Tentar novamente</button>
+        <button type="button" id="btn-outra-forma" class="botao botao-totem">Escolher outra forma</button>
+      </div>
+    </div>
+
+    <div id="caixa-sucesso" class="caixa-sucesso" role="status" hidden>
+      <h1>Pagamento aprovado!</h1>
+      <p>Sua senha:</p>
+      <p class="senha-totem" id="senha-pedido"></p>
+      <p id="texto-sucesso"></p>
+      <a href="totem.html" class="botao botao-totem botao-principal" id="btn-novo">Novo pedido</a>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <a href="ajuda.html">Ajuda</a>
+    <a href="politica.html">Política de privacidade</a>
+  </footer>
+
+  <script src="js/dados.js"></script>
+  <script src="js/totem-comum.js"></script>
+  <script src="js/totem-pagamento.js"></script>
+</body>
+</html>
